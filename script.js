@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  const hsLatex = `H(s) = \frac{N(s)}{D(s)}`;
   const numeratorLatex = `s^2 + 0.5s + 1`;
   const denominatorLatex = `s^3 + 2s^2 + 3s + 4`;
   katex.render(hsLatex, document.getElementById("latex-hs"));
   katex.render(numeratorLatex, document.getElementById("latex-numerator"));
   katex.render(denominatorLatex, document.getElementById("latex-denominator"));
 
-  const hsLatex = `H(s) = \frac{N(s)}{D(s)}`;
   const hsElement = document.getElementById("latex-hs");
   katex.render(hsLatex, hsElement);
 });
